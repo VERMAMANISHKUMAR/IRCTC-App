@@ -40,7 +40,7 @@ const Register = () => {
       autoClose: 3000,
     });
 
-    // Add your registration logic here
+ 
   };
 
   return (
@@ -105,7 +105,7 @@ const Register = () => {
           </button>
         </form>
       </div>
-      <ToastContainer /> {/* Toast container for notifications */}
+      <ToastContainer />
     </div>
   );
 };

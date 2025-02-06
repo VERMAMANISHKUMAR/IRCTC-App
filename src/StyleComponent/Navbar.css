@@ -1,0 +1,101 @@
+/* 
+.navbar {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 1rem 2rem;
+          background-color: #0047ab;
+          color: white;
+        }
+        
+        .navbar-brand h1 {
+          margin: 0;
+          font-size: 1.5rem;
+          font-weight: bold;
+        }
+        
+        .navbar-links {
+          display: flex;
+          gap: 1.5rem;
+        }
+        
+        .nav-link {
+          text-decoration: none;
+          color: white;
+          font-size: 1rem;
+          transition: color 0.3s ease;
+        }
+        
+        .nav-link:hover {
+          color: #ffcc00;
+        } */
+        
+        /* Navbar.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #0047ab;
+  color: white;
+  font-family: 'Arial', sans-serif;
+  /* position: sticky; */
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px;
+  width: auto; 
+  filter: hue-rotate(170deg) brightness(90) saturate(20);
+
+  border-radius: 5px; 
+  box-shadow: #0047ab; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logo img:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
+ 
+}
+
+.navbar-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color:white;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #ffcc00; /* Highlight color for links */
+  transform: scale(1.1); /* Slight scaling effect on hover */
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .logo img {
+    height: 40px; /* Adjust for smaller screens */
+  }
+}

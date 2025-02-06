@@ -1,13 +1,23 @@
-import { useState } from 'react'
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+import Navbar from "./Component/Navbar";
+import HomePage from "./Component/HomePage";
+import Login from "./Component/Login";
+import Register from "./Component/Register";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-     <h1>Hello this is a react app</h1>
-    </>
-  )
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/home" element={<HomePage />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;

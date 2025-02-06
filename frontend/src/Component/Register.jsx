@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css'; // Import Toastify CSS
-import '../StyleComponent/Register.css'; // Import custom CSS
+import 'react-toastify/dist/ReactToastify.css';
+import '../StyleComponent/Register.css';
 
 const Register = () => {
   const [formData, setFormData] = useState({
